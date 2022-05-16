@@ -72,14 +72,17 @@ $ cordova requirements
 android studio > More action > sdk manager
 ```
 4.3 - from `SDK Platform` tab install the android version what  you want then click apply
+
 ![img_1.png](img_1.png)
 
 4.4 -  from `SDK Tools` tab uncheck `Hide Obsolete Packages` and install: <br/>
 `Android SDK Command-line Tools` and `Android Emulator` and `Android SDK Tools (Obsolete)`
+
 ![img.png](img.png)
 
 4.4 -  from `SDK Tools` tab check `Show Package Details` and install <br/>
 `Android SDK Build-Tools`-`v30.0.3`
+
 ![img_2.png](img_2.png)
 
 4.5.1 - install `JDK` from Oracle It can be found
@@ -101,6 +104,7 @@ for me i install last version of `gradle-7.4.2`
 ```
 Start menu > Edit the system environment variables > enviroment varibles.. > add to 'Path' variable
 ```
+
 ![img_3.png](img_3.png)
 
 4.7.1 - Add this to  `System Environment Variables` After replace `<USER_NAME>`:
@@ -130,3 +134,16 @@ $ quasar dev -m [ios|android]
 ```bash
 $ quasar build -m [ios|android]
 ```
+
+###Convert File Extension from `.aab` to `.apk`
+1 - Extact [BundleToolGUI_v1.0a.zip](BundleToolGUI_v1.0a.zip)
+2 - open BundleToolGUI.exe
+3 - after build abb in quasar select .abb file from
+```bash
+./quasar-builder\dist\cordova\android\bundle\release
+```
+![img_6.png](img_6.png)
+4 - click `Convert`
+
+![img_7.png](img_7.png)
+Enjoy with your .apk file :)
